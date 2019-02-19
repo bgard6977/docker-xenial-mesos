@@ -14,3 +14,5 @@ RUN wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64
 
 RUN apt-get update && apt-get install -y python3-pip && \
     pip3 install awscli --upgrade --user
+
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
